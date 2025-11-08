@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Thangamayilu!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        .heart {
+            animation: float-css linear infinite;
+        }
+        @keyframes float-css {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-100vh) rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen relative overflow-hidden bg-gradient-to-br from-pink-50 via-blue-50 to-pink-100">
+    <!-- Floating hearts animation -->
+    <div class="absolute bottom-[-50px] w-6 h-6 text-pink-300 opacity-20 heart" style="left: 10%; animation-delay: 0s; animation-duration: 8s;">❤️</div>
+    <div class="absolute bottom-[-50px] w-6 h-6 text-pink-300 opacity-20 heart" style="left: 30%; animation-delay: 1.5s; animation-duration: 9s;">❤️</div>
+    <div class="absolute bottom-[-50px] w-6 h-6 text-pink-300 opacity-20 heart" style="left: 50%; animation-delay: 3s; animation-duration: 10s;">❤️</div>
+    <div class="absolute bottom-[-50px] w-6 h-6 text-pink-300 opacity-20 heart" style="left: 70%; animation-delay: 4.5s; animation-duration: 11s;">❤️</div>
+    <div class="absolute bottom-[-50px] w-6 h-6 text-pink-300 opacity-20 heart" style="left: 20%; animation-delay: 0.5s; animation-duration: 8.5s;">❤️</div>
+    <div class="absolute bottom-[-50px] w-6 h-6 text-pink-300 opacity-20 heart" style="left: 40%; animation-delay: 2s; animation-duration: 9.5s;">❤️</div>
+    <div class="absolute bottom-[-50px] w-6 h-6 text-pink-300 opacity-20 heart" style="left: 60%; animation-delay: 3.5s; animation-duration: 10.5s;">❤️</div>
+    <div class="absolute bottom-[-50px] w-6 h-6 text-pink-300 opacity-20 heart" style="left: 80%; animation-delay: 5s; animation-duration: 12s;">❤️</div>
+
+
+    <!-- Main content -->
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-12">
+        <div class="text-center space-y-8 animate-fade-in">
+            <!-- Sparkles -->
+            <div class="flex justify-center gap-4 mb-4">
+                <span class="text-yellow-400 animate-pulse text-3xl">✨</span>
+                <span class="text-pink-400 animate-pulse text-4xl" style="animation-delay: 0.5s;">✨</span>
+                <span class="text-blue-400 animate-pulse text-3xl" style="animation-delay: 1s;">✨</span>
+            </div>
+
+            <!-- Main heading -->
+            <div class="space-y-4">
+                <h1 class="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 animate-shimmer">
+                    Happiestt Birthday dii
+                </h1>
+                <h2 class="text-5xl md:text-6xl font-handwriting text-pink-500">
+                    Thangamayilu
+                </h2>
+            </div>
+
+            <!-- Decorative elements -->
+            <div class="flex justify-center gap-3 my-8">
+                <div class="w-12 h-12 rounded-full bg-pink-300 opacity-40 animate-bounce" style="animation-delay: 0s;"></div>
+                <div class="w-12 h-12 rounded-full bg-pink-300 opacity-40 animate-bounce" style="animation-delay: 0.2s;"></div>
+                <div class="w-12 h-12 rounded-full bg-pink-300 opacity-40 animate-bounce" style="animation-delay: 0.4s;"></div>
+                <div class="w-12 h-12 rounded-full bg-pink-300 opacity-40 animate-bounce" style="animation-delay: 0.6s;"></div>
+                <div class="w-12 h-12 rounded-full bg-pink-300 opacity-40 animate-bounce" style="animation-delay: 0.8s;"></div>
+            </div>
+
+            <!-- Message preview -->
+            <p class="text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-serif italic">
+                A special day deserves a special surprise...
+            </p>
+
+            <!-- CTA Button -->
+            <div class="pt-8">
+                <a href="surprise.html">
+                    <button
+                        class="bg-gradient-to-r from-pink-400 to-rose-400 hover:from-pink-500 hover:to-rose-500 text-white px-12 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                    >
+                        Open Your Surprise 💝
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 pointer-events-none">
+        <svg class="w-full h-32" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 Q300,100 600,60 T1200,60 L1200,120 L0,120 Z" fill="rgba(251, 207, 232, 0.3)" />
+        </svg>
+    </div>
+</body>
+</html>
