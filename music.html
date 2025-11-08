@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Surprise!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        .animate-float-music {
+            animation: float-music linear infinite;
+        }
+        @keyframes float-music {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-100 via-pink-100 to-purple-100 relative overflow-auto">
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-10 left-10 w-32 h-32 bg-pink-300 rounded-full opacity-20 animate-float-music" style="animation-duration: 10s;"></div>
+        <div class="absolute top-40 right-20 w-24 h-24 bg-blue-300 rounded-full opacity-20 animate-float-music" style="animation-delay: 1s; animation-duration: 12s;"></div>
+        <div class="absolute bottom-20 left-1/4 w-40 h-40 bg-purple-300 rounded-full opacity-20 animate-float-music" style="animation-delay: 2s; animation-duration: 11s;"></div>
+    </div>
+
+    <div class="relative z-10 container mx-auto px-6 py-16">
+        <div class="max-w-2xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-12 animate-fade-in">
+                <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 mb-4">
+                </h1>
+                <p class="text-xl text-gray-600 font-serif italic">A special song just for you papa...</p>
+            </div>
+
+            <div class="bg-white/70 backdrop-blur-md rounded-3xl p-12 shadow-2xl border-4 border-pink-200 animate-slide-up">
+                <div class="flex justify-center gap-8 mb-8">
+                    <div class="relative">
+                        <div class="w-20 h-14 bg-blue-200 rounded-full"></div>
+                        <div class="absolute top-2 left-2 w-16 h-10 bg-blue-300 rounded-full"></div>
+                        <div class="absolute top-0 left-8 text-2xl">☺️</div>
+                    </div>
+                    <div class="relative">
+                        <div class="w-20 h-14 bg-blue-200 rounded-full"></div>
+                        <div class="absolute top-2 left-2 w-16 h-10 bg-blue-300 rounded-full"></div>
+                        <div class="absolute top-0 left-8 text-2xl">☺️</div>
+                    </div>
+                </div>
+
+                <!-- QR Code section -->
+                <div class="text-center space-y-6">
+                    <div class="inline-block p-8 bg-white rounded-2xl shadow-lg border-4 border-pink-300 relative">
+                        <!-- Decorative corners -->
+                        <div class="absolute -top-2 -left-2 w-6 h-6 border-t-4 border-l-4 border-pink-400 rounded-tl-lg"></div>
+                        <div class="absolute -top-2 -right-2 w-6 h-6 border-t-4 border-r-4 border-pink-400 rounded-tr-lg"></div>
+                        <div class="absolute -bottom-2 -left-2 w-6 h-6 border-b-4 border-l-4 border-pink-400 rounded-bl-lg"></div>
+                        <div class="absolute -bottom-2 -right-2 w-6 h-6 border-b-4 border-r-4 border-pink-400 rounded-br-lg"></div>
+                        <img 
+                            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v"
+                            alt="QR Code for Perfect by Ed Sheeran"
+                            class="w-48 h-48"
+                        />
+                    </div>
+
+                    <!-- Arrow pointing to QR -->
+                    <div class="flex items-center justify-center gap-2">
+                        <div class="w-32 h-1 bg-pink-400 rounded"></div>
+                        <div class="text-3xl transform rotate-90">➜</div>
+                    </div>
+
+                    <p class="text-2xl text-gray-700 font-handwriting">
+                        Scan this QR code
+                    </p>
+
+                    <!-- Hint -->
+                    <div class="bg-pink-50 rounded-2xl p-6 mt-8">
+                        <p class="text-xl text-pink-600 font-serif mt-2">
+                            "For you papu ma..." 🎵
+                        </p>
+                    </div>
+                    <div class="flex justify-center mt-8">
+                        <div class="relative">
+                            <span class="text-6xl">🐋</span>
+                            <span class="absolute -top-2 -right-2 text-2xl animate-bounce">💕</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 bg-white/70 backdrop-blur-md rounded-3xl p-8 shadow-xl border-4 border-purple-200 animate-slide-up" style="animation-delay: 0.3s;">
+                <div class="text-center space-y-4">
+                    <h2 class="text-3xl font-handwriting text-purple-600">Forever Together</h2>
+                    <div class="flex justify-center my-4">
+                        <div class="relative w-64 h-64 rounded-3xl border-4 border-pink-300 overflow-hidden shadow-lg">
+                            <img 
+                                src="https://customer-assets.emergentagent.com/job_bf6e422f-b16f-449d-a356-72ba42aefca7/artifacts/zi67aeai_image.png"
+                                alt="Forever together"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                    <div class="bg-pink-50 rounded-xl p-6 border-2 border-pink-200">
+                        <p class="text-lg text-gray-700 font-serif leading-relaxed">
+                            I am so grateful to have by my side and i feel as the most luckiest person alive thangamae...
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="text-center mt-12">
+                <a href="index.html">
+                    <button
+                        class="border-2 border-pink-400 text-pink-600 hover:bg-pink-50 px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                    >
+                        <span class="mr-2">🏠</span> Back to Home
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
