@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy Envelope</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.pexels.com/photos/849403/pexels-photo-849403.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Envelope container with perspective for flap effect */
+        .envelope-container {
+            position: relative;
+            width: 350px;
+            height: 250px;
+            perspective: 1000px;
+        }
+
+        /* Envelope body */
+        .envelope {
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex; /* Use flexbox for vertical alignment */
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+
+        /* Envelope flap */
+        .envelope-flap {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.35);
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            transform-origin: top;
+            transition: transform 0.8s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .envelope.opened .envelope-flap {
+            transform: rotateX(-180deg);
+        }
+
+        /* Text inside envelope */
+        .envelope-content {
+            color: #040000;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem; /* Reduced font size for better fit */
+            line-height: 1.5; /* Adjusted line height */
+            text-align: center;
+            padding: 20px;
+            flex-grow: 1; /* Allows content to take available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Open button */
+        .open-button {
+            margin-bottom: 20px; /* Added margin to push button up slightly */
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 50px;
+            background: rgba(255,255,255,0.1);
+            color: #ffffff;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+
+        .open-button:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.05); /* Simplified transform */
+            box-shadow: 0 5px 20px rgba(255,255,255,0.2);
+        }
+
+        @media (max-width: 500px) {
+            .envelope-container { width: 300px; height: 200px; }
+            .envelope-content { font-size: 1rem; }
+            .open-button { font-size: 1rem; padding: 10px 25px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="envelope-container" id="envelopeContainer">
+    <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-content">
+            "Some hearts feel like home,<br>
+            and I found my home in yours<br>
+            da vellakattii" <br>
+        </div>
+        <a href="index.html" style="text-decoration: none;">
+            <button class="open-button">Open me</button>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
